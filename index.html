@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatuble" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css"> 
+    <title>miPortfolio</title>
+</head>
+<body>
+    <!--INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header"> 
+                    <h1>miPortfolio</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul> 
+                    </nav>
+
+                    <!--ICONOS-->
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--REDES-->
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/cristian-sebastian-galvan-7766a6136/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/CristianG5" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Cristian Galvan </span>, desarrollador web</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium placeat vero, magni architecto debitis ex harum quasi ea illo, est a blanditiis quisquam, molestias facilis! Molestiae vel tenetur tempora!</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>        
+        </div>
+
+    </section>
+
+    <!--SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/fondo.jpeg" all="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Cristian Galvan</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure corrupti exercitationem harum dignissimos enim in fugiat eos odit, perferendis consectetur eaque.</p>    
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit rem fuga, quis sit atque.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+            <div class="fila">
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                        <h4>Diseño de Paginas Web</h4>
+                            <hr>
+                            <ul class="servicios-tag">
+                                <li>Web</li>
+                                <li>Web</li>
+                                <li>Web</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi molestias iste.</p>                         
+                </div>
+
+                <div class="servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                        <h4>Diseño de Paginas Web</h4>
+                            <hr>
+                            <ul class="servicios-tag">
+                                <li>Web</li>
+                                <li>Web</li>
+                                <li>Web</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi molestias iste.</p>                         
+                </div>
+                
+            </div>
+    </section>
+
+<!--PORTFOLIO-->
+<section id="portfolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="./img/pro1.jpg">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="./img/pro1.jpg">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="./img/pro1.jpg">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+        
+    </div>      
+</section>
+
+<!--CONTACTO-->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+                </div>
+
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+            </form>
+        </div>
+</section>
+
+<!--FOOTER-->
+
+<footer>
+    <p>Todos los derechos reservados . 2024</p>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/cristian-sebastian-galvan-7766a6136/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/CristianG5" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
