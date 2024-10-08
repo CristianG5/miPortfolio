@@ -193,6 +193,7 @@ html {
     line-height: 25px;
     color: #565656;
     margin-bottom:12px;
+    text-align: justify; 
 } 
 
 #sobremi .sobremi a {
@@ -231,7 +232,7 @@ html {
 #servicios .fila {
     display:flex;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 30px auto;
 }
 
@@ -336,7 +337,7 @@ html {
 /*CONTACTO*/
 
 #contacto {
-    padding: 50px 15px;
+    padding: 10px 15px;
 }
 
 #contacto .titulo-seccion {
@@ -350,49 +351,41 @@ html {
     text-decoration-thickness: 5px;
 }
 
-#contacto .contenedor-form {
-    max-width: 1100px;
-    margin: auto;
-}
-
-#contacto .contenedor-form .fila {
-    margin-bottom: 15px;
-}
-
-#contacto .contenedor-form .mitad {
-    display: flex;
-    justify-content: space-between;
-}
-
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
+.contenedor-contacto {
+    max-width: 600px; 
+    margin: 0 auto; 
     padding: 20px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid #919191;
+    text-align: center; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-#contacto .contenedor-form .mitad input {
-    width: 48%;
+.contenedor-contacto p {
+    font-size: 18px; 
+    color: #333; 
+    margin: 10px 0;
 }
 
-#contacto .contenedor-form .input-full {
-    width: 100%;
+.contenedor-contacto a {
+    color: #0077b5; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
 
-#contacto .btn-enviar {
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px;
-    font-size: 10px;
-    font-weight: bold;
+.contenedor-contacto a:hover {
+    color: #005580; 
 }
 
-#contacto .btn-enviar:hover {
-    background-color: rgb(14, 26, 185);;
-    color: #fff;
+@media (max-width: 600px) {
+    .contenedor-contacto {
+        padding: 15px; 
+    }
+
+    .contenedor-contacto p {
+        font-size: 16px; 
+    }
 }
 
 /*FOOTER*/

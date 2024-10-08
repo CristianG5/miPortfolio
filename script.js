@@ -3,7 +3,7 @@ function seleccionar(link) {
     opciones.forEach(opcion => opcion.classList.remove('seleccionado'));
     link.classList.add('seleccionado');
 
-    // Aquí ocultamos el menú en pantallas móviles
+
     var nav = document.getElementById("nav");
     nav.classList.remove("responsive");
 }
